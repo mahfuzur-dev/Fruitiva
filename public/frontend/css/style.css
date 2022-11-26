@@ -1,0 +1,1902 @@
+/* Common CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,
+a:hover {
+    text-decoration: none;
+    font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Public Sans", sans-serif;
+}
+body,
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --bs-green: #0da487;
+    --bs-orange: #ff4f4f;
+    --bs-yello: #ffb321;
+    --bs-font: #fff;
+    --lk-color: #222;
+    --bs-bright: #576273;
+}
+.dark-theme {
+    --bs-font: #000;
+    --bs-bright: #fff;
+    --lk-color: #0da487;
+}
+/* Common CSS End */
+
+/* Header Top CSS Start*/
+#header_top_area {
+    background: var(--bs-green);
+    padding: 8px 0;
+}
+.timer_notification h6 {
+    color: var(--bs-font);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.timer_notification h6 a {
+    color: var(--bs-yello);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s linear;
+}
+.timer_notification h6 a:hover {
+    color: var(--bs-font);
+}
+.company_email {
+    margin-top: 5px;
+}
+.company_email a {
+    color: var(--bs-font);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.company_email a:hover {
+    color: var(--bs-yello);
+}
+.company_email a i {
+    margin-right: 10px;
+}
+.dropdown a.btn {
+    color: var(--bs-font);
+    border: none;
+}
+.dropdown-menu li a img {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+/* Header Top CSS End*/
+/* Header  CSS Start*/
+#header_area {
+    padding: 20px 0;
+    background: var(--bs-font);
+}
+.logo {
+    padding-top: 6px;
+}
+.logo img {
+    width: 90%;
+}
+.search_area {
+    position: relative;
+}
+.search_area input {
+    padding: 10px 20px;
+    border: 1px solid solid #ddd;
+}
+.form-control {
+    display: block;
+    width: 85%;
+}
+.form-control:focus {
+    color: #000;
+    background-color: var(--bs-font);
+    border-color: var(--bs-green);
+    outline: 0;
+    box-shadow: none;
+}
+.search_area input::placeholder {
+    font-size: 16px;
+    color: black;
+}
+.search_area button {
+    position: absolute;
+    right: 1px;
+    top: 0px;
+    background: var(--bs-orange);
+    padding: 11px 20px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+.search_area button i {
+    color: var(--bs-font);
+    font-size: 16px;
+}
+.rightside_box {
+    text-align: right;
+}
+.rightside_box ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.rightside_box ul li a i {
+    font-size: 24px;
+    color: var(--bs-green);
+    border-right: 2px solid #000;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.rightside_box ul li:nth-child(3) {
+    position: relative;
+}
+.rightside_box ul li:nth-child(3) a .order_shape {
+    position: absolute;
+    top: -14px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    background: var(--bs-orange);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.rightside_box ul li:nth-child(3) a .order_shape p {
+    font-size: 12px;
+    color: var(--bs-font);
+    padding-top: 5px;
+}
+.rightside_box ul li:nth-child(4) a i {
+    border-right: none;
+}
+.sub_box_title {
+    display: none;
+    text-align: left;
+}
+.rightside_box ul li:hover .sub_box_title {
+    display: block;
+    position: absolute;
+    margin-left: -150px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background: #fff;
+    z-index: 1;
+}
+.rightside_box img {
+    width: 40px;
+}
+.rightside_box ul li:hover .sub_box_title ul {
+    display: block;
+}
+.rightside_box ul li:hover .sub_box_title ul li {
+    width: 250px;
+    display: block;
+}
+.rightside_box ul li:hover .sub_box_title ul li a {
+    font-size: 16px;
+    color: var(--bs-green);
+}
+.rightside_box ul li:hover .sub_box_title ul li a i {
+    font-size: 12px;
+    color: var(--bs-green);
+}
+
+.order_pro_img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+}
+.modal_main {
+    background: var(--bs-font);
+    padding: 15px;
+}
+.order_pro_img img {
+    width: 100%;
+}
+.order_pro_name h3 {
+    font-size: 18px;
+    color: var(--bs-green);
+}
+.order_pro_name strong {
+    font-size: 14px;
+    padding-top: 8px;
+    color: var(--bs-yello);
+    text-align: left;
+}
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bs-orange);
+    text-align: left;
+}
+.modal_main .delete_icon i {
+    font-size: 20px;
+    color: var(--bs-orange);
+    border: none;
+}
+.grand_total {
+    margin: 10px;
+    padding: 10px;
+    border-top: 2px dashed var(--bs-bright);
+}
+.total_part h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bs-orange);
+    text-align: left;
+}
+.total_price_grand strong {
+    font-size: 18px;
+    color: var(--lk-color);
+    text-align: right;
+}
+.modal_footer ul li {
+    display: inline-block;
+}
+
+.modal_footer ul li strong a {
+    background: var(--bs-green);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: var(--bs-font);
+}
+
+/* Header CSS End*/
+/* Navbar CSS Start*/
+#navbar_area {
+    background: var(--bs-font);
+    padding: 20px 0;
+    position: relative;
+}
+.navbar_left {
+    transition: 0.5s;
+}
+.navbar {
+    text-align: right !important;
+}
+.sticki_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bs-font);
+    z-index: 999;
+    animation: sticky 1s linear;
+    box-shadow: 0px 10px 20px 0px rgba(129, 129, 129, 0.15);
+}
+@keyframes sticky {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0px;
+    }
+}
+.navbar_left i {
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--bs-font);
+}
+.navbar_left h3 {
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--bs-font);
+    font-weight: 600;
+    background: var(--bs-green);
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.sub_nabar_left {
+    display: none;
+}
+.navbar_left:hover .sub_nabar_left {
+    display: block;
+    background: #fff;
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 88888888;
+}
+.navbar_left:hover .sub_nabar_left ul {
+    display: block;
+    margin-top: 5px;
+    z-index: 999999;
+}
+.navbar_left:hover .sub_nabar_left ul li {
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #000;
+    z-index: 999999;
+}
+.navbar_left:hover .sub_nabar_left ul li:last-child {
+    border-bottom: none;
+}
+.navbar_left:hover .sub_nabar_left ul li a {
+    color: var(--bs-green);
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar_left:hover .sub_nabar_left ul li a i {
+    color: var(--bs-green);
+    font-size: 18px;
+}
+.navbar-nav {
+    display: inline-flex;
+}
+.navbar-nav .nav-item {
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav-item:last-child {
+    padding: 0;
+}
+
+.nav-item a {
+    color: var(--lk-color);
+    transition: 0.4s;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-item a:hover {
+    color: var(--bs-green);
+}
+#navbarSupportedContent {
+    text-align: right;
+    margin-left: 6px;
+}
+
+/* Navbar CSS End*/
+/* Banner CSS Start*/
+#banner {
+    background: var(--bs-font);
+    padding: 40px 0px;
+}
+
+.banner_left {
+    background: url(../images/banner_fruit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+.banner_left_text h6 {
+    color: #6e7784;
+    font-size: 16px;
+}
+.banner_left_text h6 span {
+    font-weight: 500;
+    padding: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)))
+        calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
+    background: #000;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(255, 114, 114, 0.15)),
+        color-stop(79%, rgba(255, 114, 114, 0))
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(255, 114, 114, 0.15) 0%,
+        rgba(255, 114, 114, 0) 79%
+    );
+    border-radius: 50px;
+    color: #ff4f54;
+    margin-left: calc(2px + (9 - 2) * ((100vw - 320px) / (1920 - 320)));
+}
+.banner_left_text h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+    padding-top: 30px;
+    color: var(--lk-color);
+}
+.banner_left_text h2 span {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+    padding-top: 30px;
+    color: var(--bs-green);
+}
+.banner_left_text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    padding: 15px 30px 30px 0px;
+    color: #aaaeb4;
+}
+.banner_left_text a {
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--bs-orange);
+    padding: 10px 15px;
+    color: var(--bs-font);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.banner_left_text a i {
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.banner_left_text a:hover {
+    background: linear-gradient(to left, #bd0402 20%, #ff5252 80%);
+}
+.banner_right {
+    background: url(../images/banner_flash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.banner_right h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--bs-orange);
+    padding-right: 15px;
+}
+.banner_right h2 span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--lk-color);
+}
+.banner_right h3 {
+    font-size: 24px;
+    color: var(--bs-green);
+    line-height: 35px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.banner_right h5 {
+    font-size: 16px;
+    color: #6a7483;
+    line-height: 28px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    letter-spacing: 4px;
+}
+.banner_right a {
+    font-size: 16px;
+    color: var(--lk-color);
+    font-weight: 400;
+    padding-top: 30px;
+}
+.banner_right a i {
+    padding-left: 5px;
+    padding-top: 3px;
+}
+/* Banner CSS End*/
+/* Browse_category CSS Start*/
+#browse_category {
+    padding: 50px 0;
+    background: var(--bs-font);
+}
+.category_head_text h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--lk-color);
+    position: relative;
+}
+.category_head_text h3::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: var(--bs-green);
+    left: 0;
+    top: 45px;
+}
+.category_head_text h3::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: var(--bs-green);
+    left: 100px;
+    top: 45px;
+}
+.category_head_text i {
+    position: absolute;
+    left: 68px;
+    top: 30px;
+    color: var(--bs-green);
+}
+.category_head_text p {
+    font-size: 16px;
+    padding-top: 55px;
+    color: #aaaeb4;
+    font-weight: 400;
+}
+
+/* Browse Offer CSS Start*/
+#offer_browse {
+    padding: 40px 0;
+    background: var(--bs-font);
+}
+.browse_offer {
+    width: 100%;
+    background: url(../images/offer_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px 0px;
+    transition: 0.5s;
+}
+.browse_offer .overlay h2 {
+    font-size: 28px;
+    color: var(--bs-font);
+    font-weight: 600;
+}
+.browse_offer .overlay h5 {
+    font-size: 16px;
+    color: var(--bs-font);
+    font-weight: 600;
+    background: rgba(10, 104, 86, 0.4);
+    padding: 10px 15px;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin-top: 20px;
+}
+/* Browse Offer CSS End*/
+/* Top Category CSS Start*/
+#top_category {
+    background: var(--bs-font);
+    padding: 35px 0;
+}
+.top_cat_box {
+    border: 1px solid var(--bs-bright);
+    padding: 10px;
+    height: 200px;
+}
+.top_cat_box img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.top_cat_box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--lk-color);
+    padding-top: 15px;
+}
+/* Top Category CSS End*/
+
+/* Browse Fruits CSS Start*/
+#browse_fruits {
+    padding-bottom: 50px;
+    background: var(--bs-font);
+}
+.fruit_box {
+    background: var(--bs-font);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px 10px;
+    margin-top: 30px;
+    position: relative;
+}
+.fruit_box img {
+    text-align: center;
+    padding-left: 30px;
+    transform: scale(0.7);
+    height: 160px;
+    width: 220px;
+    transition: 0.4s linear;
+}
+.fruit_box h4 {
+    font-size: 18px;
+    color: var(--lk-color);
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.fruit_text_box {
+    height: 150px;
+}
+.fruit_box a {
+    display: inline-block;
+}
+.fruit_box a ul li {
+    display: inline-block;
+}
+.fruit_box a ul li i {
+    font-size: 14px;
+    color: var(--bs-yello);
+    padding-top: 12px;
+}
+.fruit_box strong {
+    background: var(--bs-orange);
+    padding: 6px 20px;
+    color: var(--bs-font);
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 25px;
+}
+.fruit_box h6 {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #aaaeb4;
+}
+.fruit_box p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: var(--bs-bright);
+    line-height: 24px;
+}
+.fruit_box h5 {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bs-green);
+    display: inline-block;
+}
+.fruit_box span a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--bs-font);
+    margin-left: 45px;
+    background: var(--bs-green);
+    padding: 6px 15px;
+    border-radius: 18px;
+}
+.fruit_box:hover.fruit_box img {
+    transform: scale(0.9);
+}
+/* Browse Fruits CSS End*/
+/* Special Offer CSS Start*/
+#special_offer {
+    padding: 40px 0;
+    background: var(--bs-font);
+}
+.special_offer {
+    width: 100%;
+    background: url(../images/special_offer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 30px 50px;
+    transition: 0.5s;
+}
+.special_text {
+    text-align: center;
+}
+.special_offer .special_text h4 {
+    font-size: 24px;
+    color: var(--lk-color);
+    font-weight: 400;
+    text-align: center;
+}
+.special_offer .special_text h4 span {
+    color: var(--bs-orange);
+    font-weight: 600;
+}
+.special_offer .special_text p {
+    font-size: 14px;
+    color: var(--bs-bright);
+    font-weight: 400;
+    padding-top: 16px;
+    text-align: center;
+}
+.countdown {
+    padding-left: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+.countdown ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background: var(--bs-orange);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+.countdown ul li span {
+    color: var(--bs-font);
+}
+.innerText {
+    color: var(--lk-color);
+}
+/* Special Offer CSS End*/
+
+/* Recent Add CSS Start*/
+#recent_add {
+    padding: 50px 0px;
+    background: var(--bs-font);
+}
+.recent_head h3 {
+    font-size: 26px;
+    color: var(--lk-color);
+    font-weight: 600;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dddd;
+    position: relative;
+    margin-bottom: 30px;
+}
+.recent_head h3::after {
+    position: absolute;
+    content: "";
+    background: var(--bs-green);
+    width: 152px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+}
+.recent_selling {
+    margin-top: 15px;
+}
+.recent_img img {
+    border-radius: 5px;
+    transition: 0.5s linear;
+    transform: scale(0.7);
+    width: 100%;
+}
+.recent_selling:hover .recent_img img {
+    transform: scale(0.8);
+}
+.recent_text h4 {
+    font-size: 18px;
+    color: var(--lk-color);
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.recent_text p {
+    font-size: 14px;
+    color: #aaaeb4;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.recent_text h5 {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bs-green);
+    display: inline-block;
+    padding-top: 15px;
+}
+.recent_text span a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bs-font);
+    margin-left: 100px;
+    background: var(--bs-green);
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+/* Recent Add CSS End*/
+/* Feature Blog CSS Start*/
+#blog {
+    padding: 25px 0;
+    background: var(--bs-font);
+}
+.blog_box {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.blog_img img {
+    width: 100%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.5s linear;
+}
+.blog_box p {
+    padding-top: 20px;
+    font-size: 16px;
+    color: var(--bs-bright);
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.blog_box h4 {
+    font-size: 18px;
+    color: var(--lk-color);
+    font-weight: 600;
+    transition: 0.4s;
+}
+.blog_box:hover.blog_box h4 {
+    color: var(--bs-green);
+}
+.blog_box:hover .blog_img img {
+    transform: scale(1.05);
+}
+/* Feature Blog CSS End*/
+/* Newsletter CSS Start*/
+#newsletter {
+    padding: 25px 0;
+    background: var(--bs-font);
+}
+.newsletter_cover {
+    background: url(../images/newsletter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.newsletter_text {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.newsletter_text h3 {
+    font-size: 32px;
+    color: var(--bs-font);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.newsletter_text h6 {
+    font-size: 18px;
+    color: var(--bs-yello);
+    font-weight: 600;
+}
+.input_box {
+    position: relative;
+    margin-top: 20px;
+}
+.input_box input {
+    width: 450px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 15px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.input_box i {
+    position: absolute;
+    left: 15px;
+    top: 26%;
+    background: var(--bs-green);
+    color: var(--bs-font);
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+.input_box button {
+    outline: none;
+    border: none;
+    background: var(--bs-orange);
+    color: var(--bs-font);
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 6%;
+    right: 100px;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+/* Newsletter CSS End*/
+/* Breadscrumb CSS Start*/
+#breadscrumb {
+    background: var(--bs-font);
+}
+.breadcrumbs_text {
+    background: var(--bs-green);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.breadcrumbs_text h3 {
+    font-size: 22px;
+    color: var(--bs-font);
+    display: inline-block;
+}
+.breadcrumb_link {
+    text-align: right;
+}
+.breadcrumb_link ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.breadcrumb_link ul li a {
+    font-size: 18px;
+    color: var(--bs-font);
+    transition: 0.5s;
+}
+.breadcrumb_link ul li a:hover {
+    color: var(--bs-orange);
+}
+/* Breadscrumb CSS End*/
+/* Shop Details CSS Start*/
+#shop_details {
+    background: var(--bs-font);
+    padding: 100px 0;
+    position: relative;
+}
+
+.product_short img {
+    width: 100px;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+.slick_details {
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: 117px;
+}
+.slider-for {
+    margin-left: 140px;
+}
+.slick_details .product_short img {
+    border: 2px solid var(--bs-orange);
+    margin: 10px;
+    padding: 5px;
+}
+.slider-for .product img {
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border: 1px dashed var(--lk-color);
+    padding: 15px;
+}
+.shop_details_text {
+    border-bottom: 2px dashed var(--bs-bright);
+    padding-bottom: 40px;
+}
+.shop_details_text h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--lk-color);
+    padding-bottom: 20px;
+}
+.shop_details_text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bs-bright);
+    line-height: 26px;
+    padding: 10px 40px 10px 0;
+}
+.shop_details_text ul {
+    display: inline-block;
+}
+.shop_details_text ul li {
+    display: inline-block;
+    margin-right: 3px;
+}
+.shop_details_text ul li i {
+    color: var(--bs-yello);
+}
+.shop_details_text ul li a {
+    font-size: 16px;
+    color: var(--bs-yello);
+}
+.shop_details_text strong {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--lk-color);
+    padding-right: 10px;
+}
+.shop_details_text h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--bs-green);
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.shop_details_text del {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--lk-color);
+    padding-left: 15px;
+}
+.size {
+    margin-top: 30px;
+}
+.size h3 {
+    font-size: 20px;
+    color: var(--lk-color);
+    padding-bottom: 15px;
+}
+select {
+    position: relative;
+}
+.select select option {
+    padding-left: 10px;
+    color: var(--lk-color);
+}
+.form-select:focus {
+    border-color: var(--bs-bright);
+    outline: 0;
+    box-shadow: none;
+}
+.quantity input {
+    position: relative;
+}
+.quantity_number {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    color: var(--lk-color);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: var(--bs-font);
+    border: 1px solid var(--lk-color);
+    margin: 0px 5px;
+}
+.quantity {
+    margin-top: 40px;
+}
+.quantity button {
+    width: 40px;
+    height: 40px;
+    background: var(--bs-font);
+    color: var(--lk-color);
+    border: 1px solid var(--lk-color);
+    outline: 0;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+.quantity button:hover {
+    background: var(--bs-orange);
+    color: var(--bs-font);
+    border: 1px solid var(--bs-orange);
+}
+.total_price {
+    margin-top: 30px;
+}
+.total_price h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--bs-green);
+    padding-top: 25px;
+    text-align: right;
+    display: inline-block;
+}
+.total_price strong {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--lk-color);
+    padding-right: 10px;
+}
+.add_Cart {
+    margin-top: 30px;
+    position: relative;
+}
+.add_Cart a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bs-font);
+    background: var(--bs-orange);
+    padding: 12px 18px;
+    border-radius: 18px;
+    transition: all 0.4s ease-in-out;
+}
+.add_Cart a:hover {
+    background: var(--bs-green);
+}
+/* Shop Details CSS End*/
+/* Shop Description CSS Start*/
+#shop_description {
+    background: var(--bs-font);
+    padding: 50px 0;
+}
+.shop_desp_area button.btn {
+    background: var(--bs-orange);
+    color: var(--bs-font);
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.card {
+    background: var(--bs-font);
+}
+.card-body h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 20px;
+    background: var(--bs-font);
+}
+.top_review ul {
+    text-align: center;
+}
+.top_review ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.top_review ul li i {
+    color: var(--bs-yello);
+}
+.top_review h3 {
+    font-size: 24px;
+    color: var(--lk-color);
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.middle_review {
+    padding-left: 20px;
+}
+.middle_review h3 {
+    font-size: 24px;
+    color: var(--lk-color);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.middle_review_img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.middle_review_text ul {
+    display: inline-block;
+    margin-right: 15px;
+}
+.middle_review_text ul li {
+    display: inline-block;
+    margin-right: 1px;
+}
+.middle_review_text ul li i {
+    color: var(--bs-yello);
+}
+.middle_review_text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--lk-color);
+    display: inline-block;
+}
+.middle_review_text strong {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.middle_review_text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--bs-bright);
+}
+.middle_part {
+    margin-bottom: 30px;
+}
+.review_box {
+    margin-top: 10px;
+}
+.review_box input {
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid var(--bs-bright);
+    margin-bottom: 20px;
+}
+.review_box input::placeholder {
+    color: var(--bs-bright);
+    font-size: 16px;
+}
+.review_box h3 {
+    font-size: 18px;
+    color: var(--lk-color);
+    display: inline-block;
+    padding: 10px 0;
+}
+.review_box ul {
+    display: inline-block;
+    margin-left: 8px;
+}
+.review_box ul li {
+    display: inline-block;
+}
+.review_box ul li button {
+    color: var(--bs-yello);
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.4s ease;
+}
+.review_box ul li button:hover {
+    color: var(--bs-orange);
+}
+.review_box textarea {
+    min-height: 150px;
+}
+
+/* Shop Description CSS End*/
+/* Related Product CSS Start*/
+#related_product {
+    background: var(--bs-font);
+    padding: 50px 0;
+}
+/* Related Product CSS End*/
+/* Cart Details CSS Start*/
+#cart_detaials {
+    padding: 50px 0;
+    background: var(--bs-font);
+}
+.table_items {
+    padding-top: 10px;
+}
+.table_items img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.table_items h4 {
+    font-size: 16px;
+    display: inline-block;
+}
+.table_items button {
+    border: 1px solid var(--lk-color);
+    outline: none;
+    background: var(--bs-font);
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in;
+}
+.table_items button:hover {
+    background: var(--bs-green);
+    border: 1px solid var(--bs-green);
+}
+.table_items input {
+    width: 42px;
+    height: 38px;
+    border: 1px solid var(--lk-color);
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+.table_items a {
+    color: var(--lk-color);
+    transition: 0.4s;
+}
+.table_items a:hover {
+    color: var(--bs-orange);
+}
+.t-head th:first-child {
+    text-align: left !important;
+}
+.t-body td:first-child {
+    text-align: left !important;
+}
+.cart_item {
+    border-bottom: 1px solid var(--bs-bright);
+    padding-bottom: 20px;
+}
+.cart_item:last-child {
+    border-bottom: none;
+}
+/* Cart Details CSS End*/
+/* Cart Total CSS Start*/
+#cart_total_details {
+    background: var(--bs-font);
+    padding: 50px 0;
+}
+.cart_total_part {
+    background: var(--bs-bright);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.cart_total_part h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--bs-font);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 2px dashed var(--bs-font);
+}
+.coupon {
+    position: relative;
+}
+.coupon label {
+    font-size: 16px;
+    color: var(--lk-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.coupon input {
+    padding: 10px 15px;
+    border: 3px solid var(--bs-green);
+}
+.coupon button {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bs-font);
+    background: var(--bs-green);
+    padding: 12px 20px;
+    border: none;
+    outline: 0;
+    position: absolute;
+    right: 80px;
+    top: 52px;
+    border-radius: 0px 5px 5px 0px;
+}
+.cart_total_part {
+    position: relative;
+}
+.cart_total_part ul li {
+    display: block;
+    margin-bottom: 15px;
+}
+.cart_total_part ul li h4 {
+    font-size: 18px;
+    color: var(--bs-font);
+    display: inline-block;
+    padding-top: 20px;
+}
+.shipping {
+    margin: 10px;
+}
+.cart_total_part ul li h4.right_price {
+    position: absolute;
+    right: 30px;
+    padding-top: 20px;
+}
+.total_process {
+    padding: 20px 0;
+}
+.total_process h3 {
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: none;
+    display: inline-block;
+    padding-top: 15px;
+    border-top: 2px dashed var(--bs-font);
+}
+.procees_btn a {
+    display: block;
+    text-align: center;
+    background: var(--bs-orange);
+    padding: 10px 0;
+    margin-bottom: 15px;
+    color: var(--bs-font);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.total_process ul li h4.right_price {
+    position: absolute;
+    right: 30px;
+    bottom: 189px;
+}
+.procees_btn a:hover {
+    background: var(--bs-green);
+}
+.procees_btn a:last-child {
+    background: var(--bs-green);
+}
+
+/* Cart Total CSS End*/
+/* Checkout CSS Start*/
+#checkout {
+    background: var(--bs-font);
+    padding: 50px;
+}
+.checkout_details {
+    background: var(--bs-font);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+}
+.personal_details h3 {
+    font-size: 24px;
+    color: var(--lk-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.form_box {
+    margin-top: 15px;
+}
+.form_box label {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--lk-color);
+    padding-bottom: 10px;
+}
+.form_box .form-control:focus {
+    color: var(--lk-color);
+    background-color: var(--bs-font);
+    border-color: var(--bs-green);
+    outline: 0;
+    box-shadow: none;
+}
+.form_box input {
+    background: var(--bs-font);
+    color: var(--lk-color);
+    padding: 10px;
+    width: 100%;
+}
+.form_box select {
+    background: var(--bs-font);
+    color: var(--lk-color);
+    padding: 10px;
+    width: 100%;
+}
+.right_order_part h3 {
+    font-size: 24px;
+    color: var(--lk-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.right_order_table {
+    margin-top: 20px;
+}
+.right_order_table table {
+    border: 1px solid var(--bs-bright);
+}
+.right_order_table table tr {
+    text-align: left;
+}
+.right_order_table table tr th {
+    color: var(--lk-color);
+}
+.right_order_table table tr td {
+    color: var(--lk-color);
+}
+.right_order_part {
+    margin-top: 70px;
+}
+.order_process_part {
+    margin-top: 40px;
+    background: var(--bs-font);
+    border: 1px solid var(--bs-bright);
+}
+.order_process_part input {
+    margin: 15px;
+}
+.order_process_part label {
+    font-size: 16px;
+    color: var(--lk-color);
+    font-weight: 600;
+}
+.place_order {
+    border-top: 1px solid var(--lk-color);
+    padding: 20px 30px;
+}
+.place_order a {
+    font-size: 20px;
+    font-weight: 600;
+    background: var(--bs-orange);
+    color: var(--bs-font);
+    padding: 10px 15px;
+}
+/* Checkout CSS End*/
+/* Account CSS Start*/
+.account_section,
+.section_space {
+    background: var(--bs-font);
+}
+.account_section.section_space {
+    padding: 35px 0;
+}
+#v-pills-home-tab {
+    color: var(--bs-font);
+    background: var(--bs-orange);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--bs-font);
+    background-color: var(--bs-orange);
+}
+#v-pills-profile-tab {
+    color: var(--lk-color);
+    margin: 10px 0;
+}
+#v-pills-messages-tab {
+    color: var(--lk-color);
+    margin: 10px 0;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    color: var(--bs-font);
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+}
+.download_btn {
+    color: var(--bs-font);
+    background: var(--bs-green);
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.download_btn:hover {
+    color: var(--lk-color);
+    background: var(--bs-orange);
+}
+.profile_photo img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.profile_name h3 {
+    font-size: 18px;
+    color: var(--lk-color);
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.profile_name p {
+    font-size: 16px;
+    color: var(--lk-color);
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+/* Account CSS End*/
+/* Shop Grid CSS Start*/
+#shop_grid {
+    background: var(--bs-font);
+    padding: 30px 0;
+}
+.search_category {
+    border: 1px solid #ddd;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+.search_category h3 {
+    font-size: 16px;
+    color: var(--lk-color);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.search_category input {
+    margin-right: 10px;
+}
+.search_category label {
+    font-size: 18px;
+}
+.search_category ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lk-color);
+}
+.grid_top {
+    background: var(--bs-bright);
+    padding: 10px 0;
+}
+.grid_top .form-select {
+    width: 30%;
+    text-align: center;
+}
+.form-select {
+    margin: 0 auto;
+}
+/* Shop Grid CSS End*/
+/* Register CSS Start*/
+#register {
+    background: url(../images/);
+    padding: 30px 0;
+}
+.register_form {
+    margin: 0 auto;
+}
+.register_form p {
+    font-size: 20px;
+    color: var(--bs-font);
+    font-weight: 600;
+    background: var(--bs-orange);
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.regi_form button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: var(--bs-green);
+    border-radius: 25px;
+    color: var(--bs-font);
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+}
+.regi_form input {
+    width: 100%;
+}
+.login_btng {
+    padding: 10px 30px;
+    background: #4285f4;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bs-font);
+}
+.login_btngit {
+    padding: 10px 32px;
+    background: #171515;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bs-font);
+}
+.login_btnf {
+    padding: 10px 24px;
+    background: #3b5998;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bs-font);
+}
+.login_btng:hover {
+    color: var(--bs-font);
+}
+.login_btnf:hover {
+    color: var(--bs-font);
+}
+.login_btngit:hover {
+    color: var(--bs-font);
+}
+.login_btng i {
+    color: var(--bs-font);
+    margin-right: 6px;
+}
+.login_btngit i {
+    color: var(--bs-font);
+    margin-right: 6px;
+}
+.login_btnf i {
+    color: var(--bs-font);
+    margin-right: 6px;
+}
+.create_btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bs-font);
+    background: var(--bs-green);
+    padding: 10px 18px;
+    border-radius: 12px;
+}
+.create_btn:hover {
+    color: var(--bs-font);
+}
+/* Register CSS End*/
+/* Order Success CSS Start*/
+#order_success {
+    background: var(--bs-font);
+    padding: 30px 0;
+}
+.order_success_message {
+    padding: 30px 0;
+}
+.order_success_message h2 {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--bs-orange);
+    padding-bottom: 20px;
+}
+.order_success_message h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--lk-color);
+    padding-bottom: 20px;
+}
+.order_success_message p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--lk-color);
+    padding-bottom: 30px;
+    line-height: 26px;
+}
+.order_success_message i {
+    font-size: 40px;
+    color: var(--lk-color);
+    padding-bottom: 20px;
+}
+.order_success_message a {
+    background: var(--bs-orange);
+    color: var(--bs-font);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.4s ease-out;
+}
+.order_success_message a:hover {
+    background: #ff3d00;
+}
+/* Order Success CSS End*/
+
+/* Footer CSS End*/
+#footer {
+    background-color: var(--bs-font);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer_border {
+    border-top: 2px dashed #c1c1c1;
+    border-bottom: 2px dashed #c1c1c1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer_head img {
+    width: 60%;
+}
+.footer_head p {
+    font-size: 18px;
+    color: #3c4048;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.footer_head ul li {
+    display: block;
+    padding-bottom: 10px;
+}
+.footer_head ul li a {
+    font-size: 18px;
+    color: var(--lk-color);
+    font-weight: 600;
+    transition: 0.5s linear;
+    padding-bottom: 5px;
+}
+.footer_head ul li a i {
+    margin-right: 8px;
+}
+.footer_head ul li a:hover {
+    color: var(--bs-green);
+    border-bottom: 1px solid var(--bs-green);
+}
+.footer_head h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--lk-color);
+    padding-bottom: 40px;
+}
+.footer_contact_icon i {
+    font-size: 26px;
+    color: var(--bs-bright);
+}
+.footer_contact_text h6 {
+    font-size: 16px;
+    color: var(--bs-bright);
+    font-weight: 500;
+}
+.contact_footer_part {
+    padding: 10px 0;
+}
+.footer_contact_text h4 {
+    font-size: 18px;
+    color: var(--lk-color);
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #c1c1c1;
+}
+.app_dowload h4 {
+    font-size: 16px;
+    color: var(--bs-bright);
+    padding-bottom: 10px;
+}
+.app_dowload ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.app_dowload ul li a img {
+    width: 110px;
+}
+/* Footer CSS End*/
+/* Footer Bottom CSS Start*/
+#footer_bottom {
+    margin-top: 30px;
+    background: url(../images/footer_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+}
+.footer_bottom_left p {
+    font-size: 18px;
+    color: #3c4048;
+    padding-top: 23px;
+    font-weight: 600;
+}
+.footer_bottom_right ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer_bottom_right {
+    text-align: center;
+}
+.footer_bottom_right ul li a img {
+    width: 60px;
+    height: 50px;
+}
+/* Footer Bottom CSS End*/
+
+/* Back to Top css*/
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--bs-green);
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+.back-to-top i {
+    font-size: 20px;
+    color: var(--bs-font);
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+.dark img {
+    width: 30px;
+    position: fixed;
+    right: 35px;
+    bottom: 120px;
+    background: var(--bs-green);
+    padding: 10px;
+    border-radius: 10px;
+}
+/* Back to Top css*/
